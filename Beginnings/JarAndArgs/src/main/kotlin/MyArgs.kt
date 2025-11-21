@@ -41,7 +41,7 @@ class MyArgs(parser: ArgParser) {
         "--fatigue" to MyEnum.Fatigue,
         "--anxiety" to MyEnum.Anxiety,
         "--peckish" to MyEnum.Peckish,
-        help = "Prints the selected Enums"
+        help = "Prints one of the selected Enums"
     ).default(null)
 
     val dryrun by parser.flagging(
